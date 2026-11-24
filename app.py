@@ -122,7 +122,7 @@ import urllib.parse
 msg = f"Namaste! Nenu Amaravati Mitra lo complaint chesanu. ID: {complaint_id} | Zone: {zone} | Problem: {user_input}"
 whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
 st.link_button("📲 Share on WhatsApp", whatsapp_link)
-        st.markdown(f"""
+st.markdown(f"""
         ### 🤖 Mitra Reply:
         **Namaste! Mee complaint {zone} lo {category} gurinchi ardham ayyindi.**
         
