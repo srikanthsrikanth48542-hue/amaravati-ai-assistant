@@ -25,7 +25,7 @@ lang = st.radio("Language:", ["Telugu + English", "English Only", "Telugu Only"]
 
 user_input = st.text_input("Type your problem here / Mee samasya ikkada rayandi:", placeholder="Ex: Road lo pothole undi, Water ravatledu...")
 
-if st.button("Ask Mitra 🚀"):
+if st.button("Ask Mitra 🚀", key="ask1"):
     if not user_input:
         st.warning("Please type your problem first!")
     else:
@@ -94,7 +94,7 @@ zone = st.selectbox("Select Your Zone / Mee Zone:", zones, key="zone2")
 lang = st.radio("Language:", ["Telugu + English", "English Only", "Telugu Only"], key="lang2")
 
 user_input = st.text_input("Type your problem here / Mee samasya...", key="input1")
-if st.button("Ask Mitra 🚀"):
+if st.button("Ask Mitra 🚀", key="ask1"):
     if not user_input:
         st.warning("Please type your problem first!")
     else:
