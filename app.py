@@ -117,6 +117,11 @@ if st.button("Ask Mitra 🚀", key="ask2"):
         today = datetime.date.today()
 
         st.success(f"✅ Complaint Registered! ID: {comp_id}")
+        # WhatsApp Share Button
+import urllib.parse
+msg = f"Namaste! Nenu Amaravati Mitra lo complaint chesanu. ID: {complaint_id} | Zone: {zone} | Problem: {user_input}"
+whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
+st.link_button("📲 Share on WhatsApp", whatsapp_link)
         st.markdown(f"""
         ### 🤖 Mitra Reply:
         **Namaste! Mee complaint {zone} lo {category} gurinchi ardham ayyindi.**
