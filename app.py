@@ -128,6 +128,8 @@ st.markdown(f"""
         
         **Department:** {dept['telugu']}
         **Phone:** {dept['phone']}
+        **Expected Solution:** {dept['days']}   
+        **Phone:** {dept['phone']}
         **Expected Solution:** {dept['days']}
         **Date:** {today}
         
