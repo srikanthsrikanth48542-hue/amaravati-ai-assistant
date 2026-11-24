@@ -133,7 +133,7 @@ st.markdown(f"""
         
         **English:** Your {category} complaint in {zone} is forwarded to {dept['telugu']}. You will get an update in {dept['days']}.
         """)
-        st.balloons()
+st.balloons()
 
 st.markdown("---")
 st.markdown("**Try these:**")
