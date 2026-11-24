@@ -117,28 +117,16 @@ if st.button("Ask Mitra 🚀", key="ask2"):
         today = datetime.date.today()
 
         st.success(f"✅ Complaint Registered! ID: {comp_id}")
-        # WhatsApp Share Button
-import urllib.parse
-msg = f"Namaste! Nenu Amaravati Mitra lo complaint chesanu. Problem: {user_input}"
-whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
-st.link_button("📲 Share on WhatsApp", whatsapp_link)
-st.markdown(f"""
-       st.markdown(f"""
-### 🤖 Mitra Reply:
-**Namaste! Mee complaint ardham ayyindi.**
-**Department: Electrical Dept**
-**Phone: 0863-2340103**
-**Expected Solution: 2-3 Days**
-**Date: Today**
-""")
-        **English:** Your {category} complaint in {zone} is forwarded to {dept['telugu']}. You will get an update in {dept['days']}.
-        """)
-st.balloons()
+            # WhatsApp Share Button
+    import urllib.parse
+    msg = f"Namaste! Nenu Amaravati Mitra lo complaint chesanu. Problem: {user_input}"
+    whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
+    st.link_button("Share on WhatsApp", whatsapp_link)
 
-st.markdown("---")
-st.markdown("**Try these:**")
-st.code("Road lo pedda pothole undi")
-st.code("Maa area lo water ravatledu")
-st.code("Street light velagatledu")
-
-st.markdown("Built by Srikanth | For APCRDA Digital Amaravati Internship")
+    st.markdown(f"""
+    ### Mitra Reply:
+    **Namaste! Mee complaint ardham ayyindi.**
+    **Department: Electrical Dept**
+    **Phone: 0863-2340103**
+    **Expected Solution: 2-3 Days**
+    """)
