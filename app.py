@@ -124,7 +124,7 @@ whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
 st.link_button("📲 Share on WhatsApp", whatsapp_link)
 st.markdown(f"""
         ### 🤖 Mitra Reply:
-        **Namaste! Mee complaint {zone} lo {category} gurinchi ardham ayyindi.**
+        "**Namaste! Mee complaint ardham ayyindi.**"
         
         **Department:** {dept['telugu']}
         **Phone:** {dept['phone']}
