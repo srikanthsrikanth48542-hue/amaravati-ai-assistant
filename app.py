@@ -1,6 +1,9 @@
 import streamlit as st
 st.set_page_config(page_title="Amaravati Mitra", page_icon="🤖", layout="wide")
-st.image("logo.png", width=200)
+try:
+    st.image("logo.png", width=200)
+except:
+    pass
 st.title("🤖 Amaravati Mitra")
 st.subheader("AI Citizen Assistant | Telugu + English + Voice")
 st.markdown("Ask in Telugu or English - Road, Water, Light, Drainage, Garbage")
