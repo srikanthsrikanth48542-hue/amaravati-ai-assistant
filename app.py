@@ -123,16 +123,14 @@ msg = f"Namaste! Nenu Amaravati Mitra lo complaint chesanu. Problem: {user_input
 whatsapp_link = f"https://wa.me/?text={urllib.parse.quote(msg)}"
 st.link_button("📲 Share on WhatsApp", whatsapp_link)
 st.markdown(f"""
-        ### 🤖 Mitra Reply:
-        "**Namaste! Mee complaint ardham ayyindi.**"
-        
-        **Department:** {dept['telugu']}
-        **Phone:** {dept['phone']}
-        **Expected Solution:** {dept['days']}   
-        **Phone:** {dept['phone']}
-        **Expected Solution:** {dept['days']}
-        **Date:** {today}
-        
+       st.markdown(f"""
+### 🤖 Mitra Reply:
+**Namaste! Mee complaint ardham ayyindi.**
+**Department: Electrical Dept**
+**Phone: 0863-2340103**
+**Expected Solution: 2-3 Days**
+**Date: Today**
+""")
         **English:** Your {category} complaint in {zone} is forwarded to {dept['telugu']}. You will get an update in {dept['days']}.
         """)
 st.balloons()
