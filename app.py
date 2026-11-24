@@ -1,7 +1,7 @@
 import streamlit as st
 st.set_page_config(page_title="Amaravati Mitra", page_icon="🤖", layout="wide")
 try:
-    st.image("logo.png.png", width=200)
+    st.image("logo.png.png", width=500)
 except:
     pass
 st.title("🤖 Amaravati Mitra")
